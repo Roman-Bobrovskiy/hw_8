@@ -32,7 +32,7 @@ body {
   grid-auto-rows: 240px;
   grid-gap: 12px;
   padding: 0;
-  list-style: none;
+  list-style:none;
   margin-left: auto;
   margin-right: auto;
 }
@@ -72,6 +72,7 @@ body {
   position: fixed;
   top: 0;
   left: 0;
+  border: 1px solid #212121;
   width: 100vw;
   height: 100vh;
   opacity: 0;
@@ -137,4 +138,16 @@ body {
 .lightbox__button:hover,
 .lightbox__button:focus {
   background-color: rgba(0, 0, 0, 0.5);
+}
+.arrow_left {
+  position: absolute;
+  top: 50%;
+  left: 25px;
+  cursor: pointer;
+}
+.arrow_right {
+  position: absolute;
+  top: 50%;
+  right: 25px;
+  cursor: pointer;
 }
