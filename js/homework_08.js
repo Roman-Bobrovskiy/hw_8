@@ -1,19 +1,19 @@
 import items from "./gallery-items.js";
 
-let gallery = document.querySelector(".gallery");
+const gallery = document.querySelector(".gallery");
 // console.log(gallery);
-let imagesLink = document.querySelectorAll(".gallery__link");
+const imagesLink = document.querySelectorAll(".gallery__link");
 console.log(imagesLink);
 let images = document.querySelectorAll(".gallery__image");
 console.log(images);
-let modalImage = document.querySelector(".lightbox__image");
-let lightbox = document.querySelector(".lightbox");
+const modalImage = document.querySelector(".lightbox__image");
+const lightbox = document.querySelector(".lightbox");
 console.log(lightbox);
-let lightboxContent = document.querySelector(".lightbox__content");
+const lightboxContent = document.querySelector(".lightbox__content");
 console.log(lightboxContent);
-let lightboxImage = document.querySelector(".lightbox__image");
-let btnLeft = document.querySelector(".arrow_left");
-let btnRight = document.querySelector(".arrow_right");
+const lightboxImage = document.querySelector(".lightbox__image");
+const btnLeft = document.querySelector(".arrow_left");
+const btnRight = document.querySelector(".arrow_right");
 const btnClose = document.querySelector(".lightbox__button");
 
 
@@ -52,7 +52,6 @@ function onClickImage(e) {
   if (e.target) {
     lightbox.classList.add("is-open");
   }
-  // lightboxImage.src = images.src;
   let imageRef = e.target
   lightboxImage.src = imageRef.dataset.source
 
